@@ -28,11 +28,11 @@ class Television():
                 self.__channel = Television.MIN_CHANNEL
 
     def channel_down(self):
-            if self.__status:
-                if self.__channel > Television.MIN_CHANNEL:
-                    self.__channel -= 1
-                else:
-                    self.__channel = Television.MAX_CHANNEL
+        if self.__status:
+            if self.__channel > Television.MIN_CHANNEL:
+                self.__channel -= 1
+            else:
+                self.__channel = Television.MAX_CHANNEL
 
     def volume_up(self):
         if self.__status:
